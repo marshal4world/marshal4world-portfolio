@@ -1,6 +1,6 @@
-# Ashish Kumar Jha Portfolio
+# Ashish Jha Portfolio
 
-Logic Meets Rhythm is a static developer portfolio for Ashish Kumar Jha, also known as `marshal4world`. It is built from scratch with semantic HTML, vanilla CSS, and client-side JavaScript.
+Logic Meets Rhythm is a static developer portfolio for Ashish Jha, also known as `marshal4world`. It is built from scratch with semantic HTML, vanilla CSS, and client-side JavaScript.
 
 ## Features
 
@@ -33,19 +33,6 @@ CLI option:
 
 ```bash
 npx vercel
-```
-
-## Push To GitHub
-
-From this project folder:
-
-```bash
-git init
-git add .
-git commit -m "Create portfolio website"
-git branch -M main
-git remote add origin git@github.com:marshal4world/marshal4world-portfolio.git
-git push -u origin main
 ```
 
 ## Regenerate Hero Art

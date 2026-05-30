@@ -2,7 +2,7 @@
   "name": "marshal4world-portfolio",
   "version": "1.0.0",
   "private": true,
-  "description": "Static portfolio for Ashish Kumar Jha, marshal4world.",
+  "description": "Static portfolio for Ashish Jha, marshal4world.",
   "scripts": {
     "start": "python3 -m http.server 8000",
     "generate:hero": "node scripts/generate-hero-art.js"
@@ -14,6 +14,6 @@
     "vanilla-js",
     "vercel"
   ],
-  "author": "Ashish Kumar Jha",
+  "author": "Ashish Jha",
   "license": "MIT"
 }
