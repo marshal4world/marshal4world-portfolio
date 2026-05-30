@@ -47,7 +47,17 @@ function initNavigation() {
       links?.classList.remove("is-open");
       document.body.classList.remove("nav-open");
       toggle?.setAttribute("aria-expanded", "false");
-      document.querySelector(anchor.getAttribute("href"))?.scrollIntoView({ behavior: "smooth", block: "start" });
+      
+      const targetId = anchor.getAttribute("href");
+      const targetEl = document.querySelector(targetId);
+      if (targetEl) {
+        const headerHeight = document.querySelector(".site-header")?.offsetHeight || 76;
+        const targetPosition = targetEl.getBoundingClientRect().top + window.scrollY - headerHeight - 16;
+        window.scrollTo({
+          top: targetPosition,
+          behavior: "smooth"
+        });
+      }
     });
   });
 
@@ -411,3 +421,8 @@ function drawRhythmPulse(ctx, pulse) {
 function clamp(value, min, max) {
   return Math.max(min, Math.min(max, value));
 }
+
+// Click diagnostics
+window.addEventListener("click", event => {
+  console.log("Antigravity click debug - target element:", event.target);
+});
