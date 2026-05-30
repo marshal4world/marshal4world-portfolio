@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ashish Kumar Jha | Logic Meets Rhythm</title>
+    <meta name="description" content="Portfolio of Ashish Kumar Jha, marshal4world: programmer, dancer, competitive programmer, and deep learning builder.">
+    <meta name="keywords" content="Ashish Kumar Jha, marshal4world, developer portfolio, competitive programming, deep learning, dancer, software engineer">
+    <meta name="author" content="Ashish Kumar Jha">
+    <meta property="og:title" content="Ashish Kumar Jha | Logic Meets Rhythm">
+    <meta property="og:description" content="A cyber-glass portfolio for a programmer and dancer working across competitive programming, web, and deep learning.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/hero_art.png">
+    <meta name="theme-color" content="#0a0b10">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <canvas id="cursor-canvas" aria-hidden="true"></canvas>
+
+    <header class="site-header" id="top">
+      <nav class="nav-shell" aria-label="Primary navigation">
+        <a class="brand" href="#top" aria-label="Ashish Kumar Jha home">
+          <span class="brand-mark">A</span>
+          <span>
+            <strong>Ashish</strong>
+            <small>marshal4world</small>
+          </span>
+        </a>
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links" data-nav-links>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#arena">Arena</a>
+          <a href="#visualizer">Visualizer</a>
+          <a href="#contact">Contact</a>
+          <button class="theme-toggle" type="button" aria-label="Toggle light and dark theme">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 3v2.2M12 18.8V21M3 12h2.2M18.8 12H21M5.6 5.6l1.6 1.6M16.8 16.8l1.6 1.6M18.4 5.6l-1.6 1.6M7.2 16.8l-1.6 1.6"></path>
+              <circle cx="12" cy="12" r="4"></circle>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section" aria-labelledby="hero-title">
+        <canvas id="hero-canvas" aria-hidden="true"></canvas>
+        <div class="hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Programmer + Dancer</p>
+            <h1 id="hero-title">Ashish Kumar Jha turns logic into rhythm.</h1>
+            <p class="hero-lede">I build precise software, explore deep learning, solve competitive programming problems, and keep a dancer's instinct for timing, flow, and expression.</p>
+            <div class="hero-actions">
+              <a class="btn primary" href="#projects">Explore work</a>
+              <a class="btn ghost" href="#contact">Connect</a>
+            </div>
+            <div class="terminal-strip" aria-label="Developer identity">
+              <span>$ whoami</span>
+              <strong>marshal4world</strong>
+              <span>logic.rhythm.run()</span>
+            </div>
+          </div>
+
+          <figure class="hero-art reveal">
+            <img src="assets/hero_art.png" alt="Abstract artwork merging neural logic lines with warm rhythmic motion curves">
+          </figure>
+        </div>
+
+        <div class="stats-band reveal" aria-label="Portfolio highlights">
+          <article>
+            <span class="stat-value">CP</span>
+            <span class="stat-label">Competitive mindset</span>
+          </article>
+          <article>
+            <span class="stat-value">DL</span>
+            <span class="stat-label">Deep learning focus</span>
+          </article>
+          <article>
+            <span class="stat-value">JS</span>
+            <span class="stat-label">Interactive web craft</span>
+          </article>
+          <article>
+            <span class="stat-value">8</span>
+            <span class="stat-label">Counts before the drop</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section about" id="about" aria-labelledby="about-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">About</p>
+          <h2 id="about-title">A builder trained by algorithms and movement.</h2>
+        </div>
+        <div class="about-grid">
+          <div class="glass-panel reveal">
+            <p>I am Ashish Kumar Jha, known online as <strong>marshal4world</strong>. My work sits at the intersection of disciplined problem solving and expressive systems: competitive programming sharpened the logic, dance sharpened the feel.</p>
+            <p>I like projects that reward both rigor and taste: clean interfaces, smart models, resilient code paths, and interactions that feel alive without getting in the user's way.</p>
+          </div>
+          <div class="skill-stack reveal" aria-label="Skills">
+            <span>Algorithms</span>
+            <span>Python</span>
+            <span>JavaScript</span>
+            <span>Deep Learning</span>
+            <span>HTML5 Canvas</span>
+            <span>Systems Thinking</span>
+            <span>Chess</span>
+            <span>Dance</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section projects" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Projects</p>
+          <h2 id="projects-title">Selected work, filtered by signal.</h2>
+        </div>
+        <div class="filter-bar reveal" aria-label="Project filters">
+          <button class="filter-btn active" type="button" data-filter="all">All</button>
+          <button class="filter-btn" type="button" data-filter="python">Python</button>
+          <button class="filter-btn" type="button" data-filter="web">Web/JS</button>
+          <button class="filter-btn" type="button" data-filter="competitive">Competitive</button>
+          <button class="filter-btn" type="button" data-filter="ml">Deep Learning</button>
+        </div>
+        <div class="project-grid" data-project-grid>
+          <article class="project-card reveal" data-category="python ml">
+            <div class="project-topline">
+              <span>Deep Learning</span>
+              <code>python</code>
+            </div>
+            <h3>Neural Pattern Lab</h3>
+            <p>Experiments for model training loops, evaluation discipline, and interpretable results across compact datasets.</p>
+            <a href="#contact">Discuss project</a>
+          </article>
+          <article class="project-card reveal" data-category="web">
+            <div class="project-topline">
+              <span>Interactive Web</span>
+              <code>canvas</code>
+            </div>
+            <h3>Logic Meets Rhythm</h3>
+            <p>A visual interaction system that turns clicks and keypresses into algorithmic ripples and dance pulses.</p>
+            <a href="#visualizer">Open visualizer</a>
+          </article>
+          <article class="project-card reveal" data-category="competitive python">
+            <div class="project-topline">
+              <span>Competitive</span>
+              <code>algorithms</code>
+            </div>
+            <h3>Problem Solving Vault</h3>
+            <p>Reusable patterns for graph traversal, dynamic programming, search, and implementation-heavy contests.</p>
+            <a href="#arena">View arena</a>
+          </article>
+          <article class="project-card reveal" data-category="web python">
+            <div class="project-topline">
+              <span>Product Build</span>
+              <code>full-stack</code>
+            </div>
+            <h3>Signal-First Dashboards</h3>
+            <p>Quiet operational interfaces designed for scanning, comparison, and repeat usage rather than spectacle.</p>
+            <a href="#contact">Collaborate</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section arena" id="arena" aria-labelledby="arena-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">CP + Chess</p>
+          <h2 id="arena-title">Strategy under constraints.</h2>
+        </div>
+        <div class="arena-grid">
+          <article class="glass-panel reveal">
+            <h3>Competitive Programming</h3>
+            <p>Fast abstraction, careful edge cases, and a taste for turning pressure into clean invariants.</p>
+            <div class="metric-row">
+              <span>Graphs</span>
+              <span>DP</span>
+              <span>Greedy</span>
+              <span>Math</span>
+            </div>
+          </article>
+          <article class="glass-panel reveal">
+            <h3>Chess Thinking</h3>
+            <p>Pattern recognition, tempo, positional patience, and calculated sacrifices. The same instincts show up in code.</p>
+            <div class="metric-row">
+              <span>Tactics</span>
+              <span>Tempo</span>
+              <span>Endgames</span>
+              <span>Focus</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section visualizer-section" id="visualizer" aria-labelledby="visualizer-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Signature interaction</p>
+          <h2 id="visualizer-title">Logic and rhythm visualizer.</h2>
+        </div>
+        <div class="visualizer-grid">
+          <div class="visualizer-copy reveal">
+            <p>Click, tap, or press keys to trigger logic ripples and dance pulses. The canvas shifts between structured cyan networks and warm kinetic trails.</p>
+            <div class="control-row" aria-label="Visualizer controls">
+              <button class="icon-btn active" type="button" data-mode="logic" aria-label="Logic mode">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5v14M7 7l10 10M17 7 7 17"></path></svg>
+              </button>
+              <button class="icon-btn" type="button" data-mode="rhythm" aria-label="Rhythm mode">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 18V6l10-2v12M8 18a3 3 0 1 1-2-2.8M18 16a3 3 0 1 1-2-2.8"></path></svg>
+              </button>
+            </div>
+          </div>
+          <div class="visualizer-panel reveal">
+            <canvas id="rhythm-canvas" tabindex="0" aria-label="Interactive logic and rhythm visualizer"></canvas>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact" aria-labelledby="contact-title">
+        <div class="contact-shell reveal">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2 id="contact-title">Bring the next problem. I will bring the cadence.</h2>
+          </div>
+          <div class="social-links" aria-label="Social links">
+            <a href="https://github.com/marshal4world" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.7a9.5 9.5 0 0 0-3 18.5c.5.1.7-.2.7-.5v-1.9c-2.9.6-3.5-1.2-3.5-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.6 1 1.6 1 .9 1.5 2.3 1.1 2.9.8.1-.6.4-1.1.7-1.3-2.3-.3-4.7-1.2-4.7-5.1 0-1.1.4-2.1 1-2.8-.1-.3-.5-1.4.1-2.8 0 0 .9-.3 2.9 1.1a9.8 9.8 0 0 1 5.2 0c2-1.4 2.9-1.1 2.9-1.1.6 1.4.2 2.5.1 2.8.7.7 1 1.7 1 2.8 0 4-2.4 4.8-4.7 5.1.4.3.8 1 .8 2v2.9c0 .3.2.6.8.5A9.5 9.5 0 0 0 12 2.7Z"></path></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/ashish-kumar-jha/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8.7h3.2V19H5V8.7Zm1.6-5a1.9 1.9 0 1 1 0 3.8 1.9 1.9 0 0 1 0-3.8ZM10.2 8.7h3.1v1.4h.1c.4-.8 1.5-1.7 3-1.7 3.2 0 3.8 2.1 3.8 4.9V19H17v-5c0-1.2 0-2.7-1.7-2.7s-1.9 1.3-1.9 2.6V19h-3.2V8.7Z"></path></svg>
+            </a>
+            <a href="https://x.com/marshal4world" target="_blank" rel="noopener" aria-label="X">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 10.6 21.2 3h-1.7l-6.3 6.6L8.2 3H2.5l7.6 9.9L2.5 21h1.7l6.7-7.1 5.4 7.1H22l-8-10.4Zm-2.4 2.5-.8-1.1-6.1-7.7h2.7l4.9 6.2.8 1.1 6.4 8.1h-2.7l-5.2-6.6Z"></path></svg>
+            </a>
+            <a href="https://www.chess.com/member/marshal4world" target="_blank" rel="noopener" aria-label="Chess">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4.5a3 3 0 0 1 6 0c0 1.4-.9 2.5-2.1 2.9l.5 2.1H17l-1.3 6H8.3L7 9.5h3.6l.5-2.1A3 3 0 0 1 9 4.5ZM7 17h10l1 3H6l1-3Z"></path></svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Built from scratch with semantic HTML, CSS, and vanilla JavaScript.</p>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
