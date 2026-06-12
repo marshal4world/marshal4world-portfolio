@@ -5,6 +5,7 @@
   "description": "Static portfolio for Ashish Jha, marshal4world.",
   "scripts": {
     "start": "python3 -m http.server 8000",
+    "build": "node scripts/generate-hero-art.js",
     "generate:hero": "node scripts/generate-hero-art.js"
   },
   "keywords": [
